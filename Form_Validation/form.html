@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="form.css">
+</head>
+<body>
+  <form id="registration-form">
+    <div class="form-group">
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name"placeholder="Enter your name" required>
+      <span class="status"></span>
+    </div>
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      <span class="status"></span>
+    </div>
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter a strong password">
+      <span class="status"></span>
+    </div>
+  
+    <div class="form-group">
+      <label for="confirm-password">Confirm Password:</label>
+      <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+      <span class="status"></span>
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth <sup>*</sup></label>
+      <input pattern="\d{4}-\d{2}-\d{2}" id="dob" type="date" name="" id="" placeholder="" required>
+      <span class="err" id="dob-error"></span>
+      <span class="status"></span>
+    </div>
+    <button type="submit" id="submit-btn" >Register</button>
+  </form>
+  <script src="form.js"></script>
+</body>
+</html>
